@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: 22px;
+    text-decoration: none;
+}
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017142d9;
+    clip-path: circle(600px at right 800px);
+}
+
+.container-fluid{
+    padding: 0;
+}
+.contacts{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+.contact{
+    height: 150px;
+    width: 250px;
+    border-radius: 5px;
+    background: #017143;
+    transition: ease .7s;
+    padding-top: 10px;
+    overflow: hidden;
+    z-index: 9;
+}
+.contact:hover {
+    width: 350px;
+    height: 280px;
+    transition: ease .7s;
+}
+.contact-top{
+    width: 100%;
+    max-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-img{
+    max-width: 70px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+}
+.profile-img{
+    height: 70px;
+    width: 70px;
+}
+.profile-name{
+    height: 100%;
+    width: calc(100% - 70px);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.before-info{
+    height: 90px;
+    padding-top: 10px;
+    color: black;
+    font-size: 18px;
+    overflow: hidden;
+}
+.contact-link{
+    height: 100px;
+    width: 100%;
+    display: flex
+}
+.github{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github-btn{
+    font-size: 70px;
+    text-decoration: none;
+    color: white;
+    transition: ease-in .3s;
+}
+.github-btn:hover{
+    transform: scale(1.2);
+    transition: ease-in .3s;
+    color: #fff;
+}
+.linkedin{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkedin-btn{
+    font-size: 70px;
+    text-decoration: none;
+    color: white;
+    transition: ease-in .3s;
+}
+.linkedin-btn:hover{
+    transform: scale(1.2);
+    transition: ease-in .3s;
+    color: #fff;
+}
+@media (max-width: 991px){
+    header{
+        padding: 20px;
+    }
+    header .logo{
+        max-width: 60px;
+    }
+    header ul{
+        display: none;
+    }
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(/Imagens/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.active{
+        position: fixed;
+        right: 20px;
+        background: url(/Imagens/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header ul.navigation.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+    }
+    header ul li a{
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #017143;
+        clip-path: circle(400px at center bottom);
+    }
+    .contacts{
+        top: 70px;
+        height: 85%;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .contact1{
+        margin-top: 30px;
+    }
+    .contact2{
+        background: #fff;
+    }
+    .contact2 h3{
+        color: #017143;
+    }
+    .contact2 .github-btn{
+        color: #017143;
+    }
+    .contact2 .linkedin-btn{
+        color: #017143;
+    }
+}
