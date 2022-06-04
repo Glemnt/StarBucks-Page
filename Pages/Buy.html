@@ -4,10 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="/Pages/css/buy.css">
+    <script src="https://kit.fontawesome.com/4a1f214efe.js" crossorigin="anonymous"></script>
     <title>Buy Now</title>
 </head>
 <body>
-    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="/index.html"><img src="/Imagens/logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="Pages/Login.html">Login</a></li>
+                <li><a href="Pages/Products.html">Products</a></li>
+                <li><a href="/Pages/Contact.html">Contact</a></li>
+            </ul>
+        </header>
+            <section class="products">
+                <div class="product-1 container-fluid">
+                    <div class="p1-tilt" data-tilt>
+                        <img class="tilt-img" src="/Imagens/img1.png" alt="">
+                    </div>
+                    <div class="bg-1">
+                        <div class="line">
+                            <h1>Product</h1>
+                        </div>
+                        <div class="info-1" id="show">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                        <div class="info-2">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                        <div class="info-3">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-2 container-fluid"> 
+                    <div class="p2-tilt" data-tilt>
+                        <img class="tilt-img" src="/Imagens/img2.png" alt="">
+                    </div>
+                    <div class="bg-2">
+                        <div class="line" id="color-2">
+                            <h1>Product</h1>
+                        </div>
+                        <div class="info-1">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                        <div class="info-2"  id="show">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                        <div class="info-3">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-3 container-fluid">
+                    <div class="p3-tilt" data-tilt>
+                        <img class="tilt-img" src="/Imagens/img3.png" alt="">
+                    </div>
+                    <div class="bg-3">
+                        <div class="line" id="color-3">
+                            <h1>Product</h1>
+                        </div>
+                        <div class="info-1">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                        <div class="info-2">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                        <div class="info-3" id="show">
+                            <div class="tittle"><h1>Product</h1></div>
+                            <div class="info"><h4>Conteúdo <br> quantitade <br> Sabor</h4></div>
+                            <div class="buy-btn"><a href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+    <script src="/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/Pages/JavaScript/tilt.jquery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.p1-tilt').tilt({
+        })
+    })
+    $(document).ready(function(){
+        $('.p2-tilt').tilt({
+        })
+    })
+    $(document).ready(function(){
+        $('.p3-tilt').tilt({
+        })
+    })
+    </script>
 </body>
 </html>
