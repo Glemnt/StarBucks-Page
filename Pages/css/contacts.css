@@ -36,6 +36,7 @@ header .logo {
 header ul {
     position: relative;
     display: flex;
+    margin-left: 235px;
 }
 
 header ul li {
@@ -49,6 +50,9 @@ header ul li a {
     margin-left: 40px;
     margin-top: 22px;
     text-decoration: none;
+}
+header ul li a:hover{
+    color: #333;
 }
 .circle {
     position: absolute;
@@ -68,7 +72,7 @@ header ul li a {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
     position: absolute;
     left: 0;
 }
@@ -169,6 +173,7 @@ header ul li a {
     }
     header ul{
         display: none;
+        margin-left: 0;
     }
     .toggle{
         position: relative;
