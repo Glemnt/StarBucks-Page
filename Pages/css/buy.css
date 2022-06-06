@@ -52,7 +52,9 @@ header ul li a {
     margin-top: 22px;
     text-decoration: none;
 }
-
+header ul li a:hover{
+    color: #333;
+}
 @media (max-width: 991px){
     header{
         padding: 20px;
